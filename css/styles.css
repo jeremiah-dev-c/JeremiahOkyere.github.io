@@ -79,3 +79,58 @@ nav a:hover {
     font-size: 1.5rem;
     color: #666666;
 }
+
+.projecten {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    position: relative;
+    padding: 1.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.card h2 {
+    font-family: "Syne", Arial, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.card a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.card:focus-within {
+    outline: 3px solid #1f3a5f;
+    outline-offset: 2px;
+}
+
+.card p {
+    color: #666666;
+}
+
+.projecten-titel {
+    text-align: center;
+    font-family: "Syne", Arial, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
