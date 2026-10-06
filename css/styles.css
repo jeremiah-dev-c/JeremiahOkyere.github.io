@@ -6,15 +6,15 @@
     padding: 0;
 }
 
+body {
+    font-family: "DM Sans", Arial, sans-serif;
+}
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  top: 0;
-  left: 0;
-  right: 0;
   background: #fff;
   border-bottom: 1px solid #eee;
 }
@@ -25,7 +25,6 @@ nav ul {
   gap: 2rem;
   margin-left: auto;
   margin-right: 45%;
-  padding: 0;
 }
 
 nav a {
@@ -38,6 +37,45 @@ nav a:hover {
   color: #000;
 }
 
-main {
-    padding-top: 5rem;
+.whoami {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: auto auto;
+    align-content: center;
+    column-gap: 5rem;
+    row-gap: 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+.whoami h1 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    font-family: "Syne", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+
+.whoami img {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 25%;  
+}
+
+.whoami p {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #666666;
 }
