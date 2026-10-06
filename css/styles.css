@@ -128,9 +128,34 @@ nav a:hover {
     color: #666666;
 }
 
-.projecten-titel {
+.pagina-titel {
     text-align: center;
     font-family: "Syne", Arial, sans-serif;
     margin-top: 3rem;
     margin-bottom: 2rem;
+}
+
+.blog {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 2rem 3rem;
+}
+
+.blog-post {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.blog-post h2 {
+    font-family: "Syne", Arial, sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: #111111;
+}
+
+.blog-post p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #444444;
 }
