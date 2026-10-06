@@ -8,6 +8,9 @@
 
 body {
     font-family: "DM Sans", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -37,6 +40,10 @@ nav a:hover {
   color: #000;
 }
 
+main {
+    flex: 1;
+}
+
 .whoami {
     display: grid;
     grid-template-columns: 450px 1fr;
@@ -47,6 +54,7 @@ nav a:hover {
     max-width: 1300px;
     margin: 0 auto;
     min-height: 80vh;
+    min-height: 100vh;
 }
 
 .whoami h1 {
@@ -158,4 +166,12 @@ nav a:hover {
     font-size: 1.125rem;
     line-height: 1.7;
     color: #444444;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    color: #767676;
+    border-top: 1px solid #eee;
 }
