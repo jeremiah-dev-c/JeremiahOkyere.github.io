@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=DM+Sans:wght@400;500&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,3 +7,37 @@
 }
 
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: 45%;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+main {
+    padding-top: 5rem;
+}
