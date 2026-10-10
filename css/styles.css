@@ -174,6 +174,7 @@ footer {
     color: #767676;
     border-top: 1px solid #eee;
 }
+
 /*Tablet*/
 @media (max-width: 1024px) {
     .whoami {
@@ -214,4 +215,29 @@ footer {
     .whoami h1 {
         font-size: 2rem;
     }
+}
+
+/*filter knop */
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0 1rem;
+}
+
+.filters button {
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: #111111;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 999px;
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.filters button:hover {
+    border-color: #111111;
 }
