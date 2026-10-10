@@ -67,5 +67,3 @@ knoppen.forEach(knop => {
         toonProjecten(gefilterd);
     });
 });
-
-    
