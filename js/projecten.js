@@ -2,7 +2,7 @@ const projecten = [
     {
         titel: "Todo app",
         beschrijving: "Een eenvoudige app waarmee je taken kunt toevoegen en afvinken. Gebouwd met HTML, CSS en JavaScript.",
-        categorie: "Javascript",
+        categorie: "JavaScript",
         link: "https://github.com/jeremiah-dev-c/Todo-app"
     },
     {
@@ -43,4 +43,28 @@ const maakCard = (project) =>  {
 }
 
 const container = document.getElementById("projecten-lijst");
-projecten.forEach(project => container.appendChild(maakCard(project)));
+
+const toonProjecten = (lijst) => {
+    container.innerHTML = "";
+    lijst.forEach(project => container.appendChild(maakCard(project)));
+};
+
+toonProjecten(projecten);
+
+/* filters */
+const filterProjecten = (categorie) => {
+    if (categorie === "alle") {
+        return projecten;
+    }
+    return projecten.filter(project => project.categorie === categorie);
+};
+
+const knoppen = document.querySelectorAll(".filters button");
+
+knoppen.forEach(knop => {
+    knop.addEventListener("click", () => {
+        const gefilterd = filterProjecten(knop.dataset.categorie);
+        toonProjecten(gefilterd);
+    });
+});
+
