@@ -2,16 +2,19 @@ const projecten = [
     {
         titel: "Todo app",
         beschrijving: "Een eenvoudige app waarmee je taken kunt toevoegen en afvinken. Gebouwd met HTML, CSS en JavaScript.",
+        categorie: "Javascript",
         link: "https://github.com/jeremiah-dev-c/Todo-app"
     },
     {
         titel: "Folea-webshop",
         beschrijving: "Een webshop, gebouwd met Typescript",
+        categorie: "TypeScript",
         link: "https://github.com/jeremiah-dev-c/Folea"
     },
     {
         titel: "Portfolio",
         beschrijving: "Portfolio website gemaakt met HTML,CSS en JavaScript",
+        categorie: "HTML/CSS",
         link: "https://github.com/jeremiah-dev-c/JeremiahOkyere.github.io"
     }
 ];
