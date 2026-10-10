@@ -15,7 +15,19 @@ fetch(url)
         status.textContent = "";
         repos.forEach(repo => {
             const item = document.createElement("li");
-            item.textContent = `${repo.name} (${repo.language})`;
+
+            const link = document.createElement("a");
+            link.href = repo.html_url;
+            link.textContent = repo.name;
+            link.target = "_blank";
+            link.rel = "noopener";
+
+            const taal = document.createElement("span");
+            taal.classList.add("taal");
+            taal.textContent = repo.language ?? "Geen taal";
+
+            item.appendChild(link);
+            item.appendChild(taal);
             lijst.appendChild(item);
         });
     })
